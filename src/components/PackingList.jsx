@@ -3,9 +3,9 @@ export default function PackingList() {
         <section>
             <h1>여행 준비 목록</h1>
             <ul>
-                <li>여분 옷</li>
-                <li>책</li>
-                <li>노트북</li>
+                <Iitem name ="여분 옷" />
+                <Iitem name ="책" />
+                <Iitem name ="노트북" />
             </ul>
         </section>
     );
