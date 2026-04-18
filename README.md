@@ -44,8 +44,8 @@ React / 컴포넌트
   <li>일반적인 웹이나 웹 앱은 마크업인 HTML을 이용하여 UI의 구조를 만들고, CSS를 사용하여 스타일을 정의하며, 상호작용을 위한 JavaScript를 결합하여 완성한다. </li>
 </ol>
 
-실습 1. 
-이미지를 출력하는 컴포넌트 생성
+< 실습 1 > <br />
+이미지를 출력하는 컴포넌트 생성<br />
 import reactLogo from "./assets/react.svg";
 
 export default function App() {
