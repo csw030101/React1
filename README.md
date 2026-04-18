@@ -36,22 +36,33 @@
 
 <!-- 3 주차 -->
 <h3> 3 주차 </h3>
+React / 컴포넌트
+<ol>
+  <li>React 컴포넌트는 마크업을 함께 사용할 수 있는 JavaScript 함수로 개발한다. </li>
+  <li>컴포넌트는 버튼과 같이 작을 스도 있고, 전체 페이지와 같이 큰 경우도 있다. </li>
+  <li>React는 컴포넌트 단위로 UI를 개발하고 레고를 조립하듯이 앱을 완성한다. </li>
+  <li>일반적인 웹이나 웹 앱은 마크업인 HTML을 이용하여 UI의 구조를 만들고, CSS를 사용하여 스타일을 정의하며, 상호작용을 위한 JavaScript를 결합하여 완성한다. </li>
+</ol>
 
-=======
-# React + Vite
+실습 1. 
+이미지를 출력하는 컴포넌트 생성
+import reactLogo from "./assets/react.svg";
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+export default function App() {
+  return (
+    <>
+      <img src={reactLogo} alt="React logo" />
+    </>
+  );
+}
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> 96c983f (0408_6주차)
+
+
+
+
+
