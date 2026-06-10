@@ -1,6 +1,60 @@
 <<<<<<< HEAD
 <h1>천선우 202230334</h1>
 
+
+import { useState } from "react";
+import Desc from "./Desc";
+
+function Home() {
+  const [color, setColor] = useState("rgb(200, 200, 200)");
+
+  const handleClick = () => {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    setColor(`rgb(${r}, ${g}, ${b})`);
+  };
+
+  return (
+    <div>
+      <h1>박스 배경색 변경</h1>
+      <div
+        style={{
+          width: "200px",
+          height: "200px",
+          backgroundColor: color,
+        }}
+      />
+      <button onClick={handleClick}>색상 변경</button>
+      <Desc color={color} />
+    </div>
+  );
+}
+
+export default Home;
+
+
+
+function Desc({ color }) {
+  return (
+    <p>현재 박스의 배경색은 {color} 입니다.</p>
+  );
+}
+
+export default Desc;
+
+
+
+import React from "react";
+import ReactDOM from "react-dom/client";
+import Home from "./Home";
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <Home />
+  </React.StrictMode>
+);
+
 <h3> 13 주차 </h3>
 렌더링 과정의 3단계 / 스냅샷처럼 동작하는 State
 <ol>
